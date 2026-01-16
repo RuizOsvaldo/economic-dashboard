@@ -4,7 +4,7 @@ An end-to-end ETL pipeline and analytics dashboard tracking key U.S. economic in
 
 ![Dashboard Screenshot](screenshots/dashboard.png)
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates a complete data engineering workflow:
 - **Extract**: Pull economic data from FRED REST API
@@ -12,7 +12,7 @@ This project demonstrates a complete data engineering workflow:
 - **Load**: Store in PostgreSQL database
 - **Visualize**: Interactive Google Sheets dashboard with automated updates
 
-## 📊 Economic Indicators Tracked
+## Economic Indicators Tracked
 
 | Category | Indicators |
 |----------|------------|
@@ -23,19 +23,19 @@ This project demonstrates a complete data engineering workflow:
 | **Consumer** | Consumer Sentiment, Retail Sales |
 | **Housing** | Housing Starts |
 
-## 🏗️ Architecture
+## Architecture
 ```
 FRED API → Python ETL → PostgreSQL → SQL Analytics → Google Sheets Dashboard
 ```
 
-## 🔧 Technical Stack
+## Technical Stack
 
 - **Python**: pandas, SQLAlchemy, fredapi, gspread
 - **Database**: PostgreSQL
 - **Cloud**: Google Cloud Platform (Sheets API, Drive API)
 - **SQL**: Window functions, CTEs, aggregations
 
-## 📈 Key Features
+## Key Features
 
 ### ETL Pipeline
 - Automated data extraction from 13 FRED economic series
@@ -56,7 +56,7 @@ FRED API → Python ETL → PostgreSQL → SQL Analytics → Google Sheets Dashb
 - Consumer Sentiment tracking
 - Yield Curve inversion monitoring (recession signal)
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 - Python 3.9+
@@ -91,7 +91,7 @@ python3 src/etl_pipeline.py
 python3 src/export_to_sheets.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 ```
 economic-dashboard/
 ├── src/
@@ -109,7 +109,7 @@ economic-dashboard/
 └── README.md
 ```
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 The dashboard displays:
 - **GDP Growth**: Current growth rate with trend indicator
@@ -119,13 +119,13 @@ The dashboard displays:
 - **Economic Cycle**: Expansion, Mid Cycle, Late Cycle, or Recession
 - **Yield Curve**: Recession probability indicator (negative = warning)
 
-## 👤 Author
+## Author
 
 **Osvaldo Ruiz**
 - LinkedIn: [linkedin.com/in/OsvaldoRuiz](https://linkedin.com/in/OsvaldoRuiz)
 - GitHub: [github.com/ruizOsvaldo](https://github.com/ruizOsvaldo)
 - Portfolio: [ruizosvaldo.github.io](https://ruizosvaldo.github.io)
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.

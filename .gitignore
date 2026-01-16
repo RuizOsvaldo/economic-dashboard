@@ -1,0 +1,25 @@
+# Environment (NEVER commit secrets)
+.env
+credentials.json
+venv/
+__pycache__/
+*.pyc
+
+# Data files
+*.csv
+data/
+
+# Database
+*.db
+*.sqlite3
+mlb_predictions.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
